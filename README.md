@@ -1,0 +1,1 @@
+# wpessential-catalog-publish-guard-for-woocommerce

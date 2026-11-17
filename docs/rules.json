@@ -1,0 +1,796 @@
+{
+  "schema_version": 1,
+  "verified_implementation": false,
+  "rules": [
+    {
+      "id": "BAS-001",
+      "category": "Basic product metadata",
+      "tier": "Free",
+      "label": "Missing/blank product title",
+      "applies": "all",
+      "default_severity": "block",
+      "remediation": "Product title field",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "BAS-002",
+      "category": "Basic product metadata",
+      "tier": "Free",
+      "label": "Description absent",
+      "applies": "all",
+      "default_severity": "warn",
+      "remediation": "Description editor",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "BAS-003",
+      "category": "Basic product metadata",
+      "tier": "Free",
+      "label": "Short description absent",
+      "applies": "all",
+      "default_severity": "warn",
+      "remediation": "Short description editor",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "BAS-004",
+      "category": "Basic product metadata",
+      "tier": "Free",
+      "label": "No product categories",
+      "applies": "all",
+      "default_severity": "warn",
+      "remediation": "Product categories",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "BAS-005",
+      "category": "Basic product metadata",
+      "tier": "Free",
+      "label": "Only Uncategorized selected",
+      "applies": "all",
+      "default_severity": "warn",
+      "remediation": "Product categories",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "BAS-006",
+      "category": "Basic product metadata",
+      "tier": "Free",
+      "label": "Missing SKU",
+      "applies": "stock-managed applicable",
+      "default_severity": "warn",
+      "remediation": "Inventory / SKU",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "BAS-007",
+      "category": "Basic product metadata",
+      "tier": "Free",
+      "label": "Duplicate SKU where verified",
+      "applies": "all applicable",
+      "default_severity": "block",
+      "remediation": "Inventory / SKU",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "BAS-008",
+      "category": "Basic product metadata",
+      "tier": "Free",
+      "label": "Featured image missing",
+      "applies": "all eligible",
+      "default_severity": "warn",
+      "remediation": "Product image",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "BAS-009",
+      "category": "Basic product metadata",
+      "tier": "Free",
+      "label": "Featured image attachment invalid",
+      "applies": "image-bearing types",
+      "default_severity": "block",
+      "remediation": "Product image",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "BAS-010",
+      "category": "Basic product metadata",
+      "tier": "Free",
+      "label": "Product type cannot be resolved",
+      "applies": "all",
+      "default_severity": "block",
+      "remediation": "Product type selector",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-001",
+      "category": "Price and sale",
+      "tier": "Free",
+      "label": "Missing effective price",
+      "applies": "priced/purchasable product",
+      "default_severity": "block",
+      "remediation": "General / price",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-002",
+      "category": "Price and sale",
+      "tier": "Free",
+      "label": "Explicit zero price",
+      "applies": "priced product",
+      "default_severity": "info",
+      "remediation": "General / price; allow by default",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-003",
+      "category": "Price and sale",
+      "tier": "Free",
+      "label": "Negative effective price",
+      "applies": "priced product",
+      "default_severity": "block",
+      "remediation": "General / price",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-004",
+      "category": "Price and sale",
+      "tier": "Free",
+      "label": "Invalid numeric format",
+      "applies": "priced product",
+      "default_severity": "block",
+      "remediation": "General / price",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-005",
+      "category": "Price and sale",
+      "tier": "Free",
+      "label": "Sale above regular price",
+      "applies": "sale products",
+      "default_severity": "block",
+      "remediation": "General / sale price",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-006",
+      "category": "Price and sale",
+      "tier": "Free",
+      "label": "End date before start",
+      "applies": "sale products",
+      "default_severity": "block",
+      "remediation": "Schedule sale",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-007",
+      "category": "Price and sale",
+      "tier": "Free",
+      "label": "Expired sale schedule",
+      "applies": "sale products",
+      "default_severity": "warn",
+      "remediation": "Schedule sale",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-008",
+      "category": "Price and sale",
+      "tier": "Free",
+      "label": "Price changes after validation",
+      "applies": "published update",
+      "default_severity": "block",
+      "remediation": "Fresh validation, do not auto-publish",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "STK-001",
+      "category": "Stock and availability",
+      "tier": "Free",
+      "label": "Manage stock quantity missing",
+      "applies": "managed stock",
+      "default_severity": "block",
+      "remediation": "Inventory / quantity",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "STK-002",
+      "category": "Stock and availability",
+      "tier": "Free",
+      "label": "Stock inconsistency",
+      "applies": "stock-managed",
+      "default_severity": "warn",
+      "remediation": "Inventory",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "STK-003",
+      "category": "Stock and availability",
+      "tier": "Free",
+      "label": "Negative quantity respecting backorders",
+      "applies": "stock-managed",
+      "default_severity": "warn",
+      "remediation": "Inventory/backorders",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "STK-004",
+      "category": "Stock and availability",
+      "tier": "Free",
+      "label": "Out of stock",
+      "applies": "physical",
+      "default_severity": "info",
+      "remediation": "No block by default",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "STK-005",
+      "category": "Stock and availability",
+      "tier": "Free",
+      "label": "Backorder policy violation",
+      "applies": "stock-managed",
+      "default_severity": "warn",
+      "remediation": "Inventory/backorders",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "STK-006",
+      "category": "Stock and availability",
+      "tier": "Free",
+      "label": "Invalid stock number",
+      "applies": "stock-managed",
+      "default_severity": "block",
+      "remediation": "Inventory / quantity",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-001",
+      "category": "Variable product basic",
+      "tier": "Free",
+      "label": "Variable parent contains no variations",
+      "applies": "variable",
+      "default_severity": "block",
+      "remediation": "Variations tab",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-002",
+      "category": "Variable product basic",
+      "tier": "Free",
+      "label": "No enabled purchasable variations",
+      "applies": "variable",
+      "default_severity": "block",
+      "remediation": "Variations tab",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-003",
+      "category": "Variable product basic",
+      "tier": "Free",
+      "label": "Enabled variation without effective price",
+      "applies": "variable",
+      "default_severity": "block",
+      "remediation": "Variation price editor",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-004",
+      "category": "Variable product basic",
+      "tier": "Free",
+      "label": "Missing valid parent attribute definition",
+      "applies": "variable",
+      "default_severity": "block",
+      "remediation": "Attributes tab",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-005",
+      "category": "Variable product basic",
+      "tier": "Free",
+      "label": "Invalid default variation",
+      "applies": "variable",
+      "default_severity": "warn",
+      "remediation": "Variation default selector",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "TYP-001",
+      "category": "Downloadable/external/grouped",
+      "tier": "Free",
+      "label": "Downloadable file row empty when required",
+      "applies": "downloadable",
+      "default_severity": "block",
+      "remediation": "Downloadable files",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "TYP-002",
+      "category": "Downloadable/external/grouped",
+      "tier": "Free",
+      "label": "Invalid downloadable file reference",
+      "applies": "downloadable",
+      "default_severity": "warn",
+      "remediation": "Downloadable files",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "TYP-003",
+      "category": "Downloadable/external/grouped",
+      "tier": "Free",
+      "label": "External URL invalid",
+      "applies": "external",
+      "default_severity": "block",
+      "remediation": "Product URL",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "TYP-004",
+      "category": "Downloadable/external/grouped",
+      "tier": "Free",
+      "label": "Grouped child relation missing",
+      "applies": "grouped",
+      "default_severity": "warn",
+      "remediation": "Linked products",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "TYP-005",
+      "category": "Downloadable/external/grouped",
+      "tier": "Free",
+      "label": "Virtual product shipping fields not applicable",
+      "applies": "virtual",
+      "default_severity": "info",
+      "remediation": "Skip shipping requirements",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "TYP-006",
+      "category": "Downloadable/external/grouped",
+      "tier": "Free",
+      "label": "Unknown custom product type",
+      "applies": "custom type",
+      "default_severity": "warn",
+      "remediation": "Adapter needed / diagnostics",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IMG-101",
+      "category": "Rich content / images",
+      "tier": "Pro",
+      "label": "Minimum gallery image count",
+      "applies": "configured categories",
+      "default_severity": "block",
+      "remediation": "Gallery uploader",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IMG-102",
+      "category": "Rich content / images",
+      "tier": "Pro",
+      "label": "Minimum image dimensions",
+      "applies": "images",
+      "default_severity": "warn",
+      "remediation": "Media details",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IMG-103",
+      "category": "Rich content / images",
+      "tier": "Pro",
+      "label": "Missing image ALT text",
+      "applies": "images",
+      "default_severity": "warn",
+      "remediation": "Media details / ALT",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IMG-104",
+      "category": "Rich content / images",
+      "tier": "Pro",
+      "label": "Duplicate featured/gallery attachment",
+      "applies": "images",
+      "default_severity": "warn",
+      "remediation": "Gallery",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IMG-105",
+      "category": "Rich content / images",
+      "tier": "Pro",
+      "label": "Broken local attachment file",
+      "applies": "images",
+      "default_severity": "block",
+      "remediation": "Media details",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IMG-106",
+      "category": "Rich content / images",
+      "tier": "Pro",
+      "label": "Variation image missing / parent fallback",
+      "applies": "variable",
+      "default_severity": "warn",
+      "remediation": "Variation image",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IMG-107",
+      "category": "Rich content / images",
+      "tier": "Pro",
+      "label": "Image-type/category conditional requirements",
+      "applies": "policy-scoped",
+      "default_severity": "block",
+      "remediation": "Policy editor",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-101",
+      "category": "Advanced pricing and commerce",
+      "tier": "Pro",
+      "label": "Minimum permitted price",
+      "applies": "policy-scoped",
+      "default_severity": "block",
+      "remediation": "Price / policy",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-102",
+      "category": "Advanced pricing and commerce",
+      "tier": "Pro",
+      "label": "Maximum permitted price",
+      "applies": "policy-scoped",
+      "default_severity": "warn",
+      "remediation": "Price / policy",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-103",
+      "category": "Advanced pricing and commerce",
+      "tier": "Pro",
+      "label": "Discount percentage above limit",
+      "applies": "sale products",
+      "default_severity": "review",
+      "remediation": "Price / request approval",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-104",
+      "category": "Advanced pricing and commerce",
+      "tier": "Pro",
+      "label": "Sudden price decrease threshold",
+      "applies": "published revision",
+      "default_severity": "review",
+      "remediation": "Price revision",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-105",
+      "category": "Advanced pricing and commerce",
+      "tier": "Pro",
+      "label": "Category price band",
+      "applies": "policy-scoped",
+      "default_severity": "warn",
+      "remediation": "Category policy",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "PRC-106",
+      "category": "Advanced pricing and commerce",
+      "tier": "Pro",
+      "label": "Currency-specific threshold",
+      "applies": "policy-scoped",
+      "default_severity": "block",
+      "remediation": "Currency policy",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-101",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Missing explicitly expected combinations",
+      "applies": "variable, policy-defined matrix",
+      "default_severity": "block",
+      "remediation": "Matrix / missing",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-102",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Duplicate attribute combinations",
+      "applies": "variable",
+      "default_severity": "block",
+      "remediation": "Matrix / duplicates",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-103",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Orphan variation / detached parent",
+      "applies": "variable",
+      "default_severity": "block",
+      "remediation": "Matrix / orphan",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-104",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Variation uses nonexistent attribute term",
+      "applies": "variable",
+      "default_severity": "block",
+      "remediation": "Attribute correction",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-105",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Unused parent attribute values",
+      "applies": "variable",
+      "default_severity": "warn",
+      "remediation": "Matrix / unused",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-106",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Variation SKU missing / pattern",
+      "applies": "variable",
+      "default_severity": "warn",
+      "remediation": "Variation inventory",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-107",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Variation stock quantity inconsistent",
+      "applies": "variable",
+      "default_severity": "warn",
+      "remediation": "Variation inventory",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-108",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Variation dimension requirements",
+      "applies": "variable physical",
+      "default_severity": "warn",
+      "remediation": "Variation shipping",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-109",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Variation image required despite fallback",
+      "applies": "policy-scoped",
+      "default_severity": "block",
+      "remediation": "Variation image",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-110",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Wildcard ANY variation ambiguity",
+      "applies": "variable",
+      "default_severity": "review",
+      "remediation": "Matrix / wildcard analysis",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-111",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Variation inherited pricing and availability",
+      "applies": "variable",
+      "default_severity": "info",
+      "remediation": "Respect WooCommerce purchasability",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "VAR-112",
+      "category": "Advanced variations",
+      "tier": "Pro",
+      "label": "Disabled variation policy",
+      "applies": "variable",
+      "default_severity": "warn",
+      "remediation": "Disabled variation review",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "SHP-101",
+      "category": "Shipping/identifiers",
+      "tier": "Pro",
+      "label": "Shipping weight required",
+      "applies": "policy-scoped physical",
+      "default_severity": "block",
+      "remediation": "Shipping / weight",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "SHP-102",
+      "category": "Shipping/identifiers",
+      "tier": "Pro",
+      "label": "Dimensions required",
+      "applies": "policy-scoped physical",
+      "default_severity": "block",
+      "remediation": "Shipping / dimensions",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "SHP-103",
+      "category": "Shipping/identifiers",
+      "tier": "Pro",
+      "label": "Shipping class requirement",
+      "applies": "policy-scoped physical",
+      "default_severity": "warn",
+      "remediation": "Shipping / class",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IDF-101",
+      "category": "Shipping/identifiers",
+      "tier": "Pro",
+      "label": "SKU format regex",
+      "applies": "policy-scoped",
+      "default_severity": "block",
+      "remediation": "Inventory / SKU",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IDF-102",
+      "category": "Shipping/identifiers",
+      "tier": "Pro",
+      "label": "Brand taxonomy required",
+      "applies": "policy-scoped",
+      "default_severity": "block",
+      "remediation": "Brand selector",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IDF-103",
+      "category": "Shipping/identifiers",
+      "tier": "Pro",
+      "label": "GTIN/MPN meta requirement",
+      "applies": "policy-scoped",
+      "default_severity": "warn",
+      "remediation": "Identifier metadata",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IDF-104",
+      "category": "Shipping/identifiers",
+      "tier": "Pro",
+      "label": "Custom field required",
+      "applies": "policy-scoped",
+      "default_severity": "block",
+      "remediation": "Custom/meta field",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IDF-105",
+      "category": "Shipping/identifiers",
+      "tier": "Pro",
+      "label": "Taxonomy term minimum",
+      "applies": "policy-scoped",
+      "default_severity": "warn",
+      "remediation": "Taxonomy panel",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "IDF-106",
+      "category": "Shipping/identifiers",
+      "tier": "Pro",
+      "label": "Tag count requirement",
+      "applies": "policy-scoped",
+      "default_severity": "warn",
+      "remediation": "Tags",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "POL-101",
+      "category": "Workflow/integrity",
+      "tier": "Pro",
+      "label": "Policy conflict / unsupported value",
+      "applies": "policy config",
+      "default_severity": "block",
+      "remediation": "Policy editor / simulation",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "POL-102",
+      "category": "Workflow/integrity",
+      "tier": "Pro",
+      "label": "Pending approval stale after product change",
+      "applies": "approval",
+      "default_severity": "block",
+      "remediation": "Resubmit approval",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "POL-103",
+      "category": "Workflow/integrity",
+      "tier": "Pro",
+      "label": "Pending approval stale after policy change",
+      "applies": "approval",
+      "default_severity": "block",
+      "remediation": "Revalidate with policy",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "POL-104",
+      "category": "Workflow/integrity",
+      "tier": "Pro",
+      "label": "Revision base product changed",
+      "applies": "revision",
+      "default_severity": "block",
+      "remediation": "Resolve revision conflict",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "POL-105",
+      "category": "Workflow/integrity",
+      "tier": "Pro",
+      "label": "Scheduled release validation fails",
+      "applies": "scheduled publish",
+      "default_severity": "block",
+      "remediation": "Hold + notify",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "POL-106",
+      "category": "Workflow/integrity",
+      "tier": "Pro",
+      "label": "Import parent/variation assembly incomplete",
+      "applies": "import",
+      "default_severity": "block",
+      "remediation": "Wait until batch complete",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "POL-107",
+      "category": "Workflow/integrity",
+      "tier": "Pro",
+      "label": "Unauthorized waiver",
+      "applies": "approval",
+      "default_severity": "block",
+      "remediation": "Manager permission",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "POL-108",
+      "category": "Workflow/integrity",
+      "tier": "Pro",
+      "label": "Expired waiver",
+      "applies": "approval",
+      "default_severity": "block",
+      "remediation": "Renew after review",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "POL-109",
+      "category": "Workflow/integrity",
+      "tier": "Pro",
+      "label": "Multi-policy category precedence",
+      "applies": "policies",
+      "default_severity": "info",
+      "remediation": "Show policy decisions",
+      "must_have_positive_and_negative_tests": true
+    },
+    {
+      "id": "POL-110",
+      "category": "Workflow/integrity",
+      "tier": "Pro",
+      "label": "Synchronized published edit conflicts",
+      "applies": "revision",
+      "default_severity": "block",
+      "remediation": "Versioned apply",
+      "must_have_positive_and_negative_tests": true
+    }
+  ]
+}

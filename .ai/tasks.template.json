@@ -1,0 +1,3849 @@
+{
+  "schema_version": 1,
+  "product": "WPEssential Catalog Publish Guard for WooCommerce",
+  "verified_implementation": false,
+  "phase_count": 5,
+  "phases": {
+    "P0": "Discover, Design & Bootstrap",
+    "P1": "Free Core with Actual Guard",
+    "P2": "Pro Complete Workflows",
+    "P3": "End-to-End QA and Hardening",
+    "P4": "Documentation, Builds and Marketplace Ready"
+  },
+  "tasks": [
+    {
+      "id": "WPCPG-P0-REPO-AUDIT",
+      "phase": "P0",
+      "summary": "Inspect all repository code, branches and prior memory; preserve real work",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "ready",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "Full tree and Git audit committed",
+        "Existing artifacts evaluated",
+        "Correct next task identified"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P0-SOURCES",
+      "phase": "P0",
+      "summary": "Verify current official sources and competitors",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-REPO-AUDIT"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P0-CONTRACTS",
+      "phase": "P0",
+      "summary": "Define source adapters, domain schema, Free/Pro boundaries",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-REPO-AUDIT"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P0-COMPOSER",
+      "phase": "P0",
+      "summary": "Initialize separate Composer/PSR-4 bootstraps and dependency guards",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-REPO-AUDIT"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P0-DESIGN",
+      "phase": "P0",
+      "summary": "Confirm 17 native WC admin screen contracts and visual states",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-REPO-AUDIT"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P0-AUTOMATION",
+      "phase": "P0",
+      "summary": "Set up lint, PHPUnit, Playwright, Playground and CI scaffolds",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-REPO-AUDIT"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P0-STATE",
+      "phase": "P0",
+      "summary": "Initialize verified .ai state/backlog/task evidence and START_HERE",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-REPO-AUDIT"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-BAS-001",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Missing/blank product title",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-BAS-002",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Description absent",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-BAS-003",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Short description absent",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-BAS-004",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test No product categories",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-BAS-005",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Only Uncategorized selected",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-BAS-006",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Missing SKU",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-BAS-007",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Duplicate SKU where verified",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-BAS-008",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Featured image missing",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-BAS-009",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Featured image attachment invalid",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-BAS-010",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Product type cannot be resolved",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-PRC-001",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Missing effective price",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-PRC-002",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Explicit zero price",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-PRC-003",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Negative effective price",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-PRC-004",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Invalid numeric format",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-PRC-005",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Sale above regular price",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-PRC-006",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test End date before start",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-PRC-007",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Expired sale schedule",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-PRC-008",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Price changes after validation",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-STK-001",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Manage stock quantity missing",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-STK-002",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Stock inconsistency",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-STK-003",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Negative quantity respecting backorders",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-STK-004",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Out of stock",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-STK-005",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Backorder policy violation",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-STK-006",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Invalid stock number",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-VAR-001",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Variable parent contains no variations",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-VAR-002",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test No enabled purchasable variations",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-VAR-003",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Enabled variation without effective price",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-VAR-004",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Missing valid parent attribute definition",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-VAR-005",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Invalid default variation",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-TYP-001",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Downloadable file row empty when required",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-TYP-002",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Invalid downloadable file reference",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-TYP-003",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test External URL invalid",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-TYP-004",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Grouped child relation missing",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-TYP-005",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Virtual product shipping fields not applicable",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-RULE-TYP-006",
+      "phase": "P1",
+      "summary": "Implement, wire, document and test Unknown custom product type",
+      "owner": "Free PHP Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IMG-101",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Minimum gallery image count",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IMG-102",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Minimum image dimensions",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IMG-103",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Missing image ALT text",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IMG-104",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Duplicate featured/gallery attachment",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IMG-105",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Broken local attachment file",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IMG-106",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Variation image missing / parent fallback",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IMG-107",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Image-type/category conditional requirements",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-PRC-101",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Minimum permitted price",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-PRC-102",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Maximum permitted price",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-PRC-103",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Discount percentage above limit",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-PRC-104",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Sudden price decrease threshold",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-PRC-105",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Category price band",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-PRC-106",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Currency-specific threshold",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-101",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Missing explicitly expected combinations",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-102",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Duplicate attribute combinations",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-103",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Orphan variation / detached parent",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-104",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Variation uses nonexistent attribute term",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-105",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Unused parent attribute values",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-106",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Variation SKU missing / pattern",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-107",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Variation stock quantity inconsistent",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-108",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Variation dimension requirements",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-109",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Variation image required despite fallback",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-110",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Wildcard ANY variation ambiguity",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-111",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Variation inherited pricing and availability",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-VAR-112",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Disabled variation policy",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-SHP-101",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Shipping weight required",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-SHP-102",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Dimensions required",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-SHP-103",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Shipping class requirement",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IDF-101",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test SKU format regex",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IDF-102",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Brand taxonomy required",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IDF-103",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test GTIN/MPN meta requirement",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IDF-104",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Custom field required",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IDF-105",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Taxonomy term minimum",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-IDF-106",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Tag count requirement",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-POL-101",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Policy conflict / unsupported value",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-POL-102",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Pending approval stale after product change",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-POL-103",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Pending approval stale after policy change",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-POL-104",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Revision base product changed",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-POL-105",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Scheduled release validation fails",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-POL-106",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Import parent/variation assembly incomplete",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-POL-107",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Unauthorized waiver",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-POL-108",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Expired waiver",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-POL-109",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Multi-policy category precedence",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-RULE-POL-110",
+      "phase": "P2",
+      "summary": "Implement, wire, document and test Synchronized published edit conflicts",
+      "owner": "Pro Policy Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-CONTRACTS"
+      ],
+      "acceptance_criteria": [
+        "Positive and negative fixtures",
+        "Correct type applicability",
+        "Field-level remediation",
+        "Server-side outcome and integration"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-UI-001",
+      "phase": "P1",
+      "summary": "Implement and E2E test screen Overview",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-UI-002",
+      "phase": "P1",
+      "summary": "Implement and E2E test screen Product Preflight",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-UI-003",
+      "phase": "P1",
+      "summary": "Implement and E2E test screen Basic Validation Rules",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-UI-004",
+      "phase": "P2",
+      "summary": "Implement and E2E test screen Policy Builder",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-UI-005",
+      "phase": "P1",
+      "summary": "Implement and E2E test screen Catalog Audit",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-UI-006",
+      "phase": "P2",
+      "summary": "Implement and E2E test screen Variation Inspector",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-UI-007",
+      "phase": "P2",
+      "summary": "Implement and E2E test screen Bulk Preflight",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-UI-008",
+      "phase": "P2",
+      "summary": "Implement and E2E test screen CSV Import Guard",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-UI-009",
+      "phase": "P2",
+      "summary": "Implement and E2E test screen Approval Queue",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-UI-010",
+      "phase": "P2",
+      "summary": "Implement and E2E test screen Published Product Revisions",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-UI-011",
+      "phase": "P2",
+      "summary": "Implement and E2E test screen Exceptions & Waivers",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-UI-012",
+      "phase": "P1",
+      "summary": "Implement and E2E test screen Reports",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-UI-013",
+      "phase": "P1",
+      "summary": "Implement and E2E test screen Activity Log",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-UI-014",
+      "phase": "P1",
+      "summary": "Implement and E2E test screen Settings",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-UI-015",
+      "phase": "P1",
+      "summary": "Implement and E2E test screen Tools & Diagnostics",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-UI-016",
+      "phase": "P1",
+      "summary": "Implement and E2E test screen Product Editor Readiness Box",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-UI-017",
+      "phase": "P1",
+      "summary": "Implement and E2E test screen Products List Integration",
+      "owner": "UI/Frontend Engineer",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-DESIGN"
+      ],
+      "acceptance_criteria": [
+        "All declared fields/actions wired",
+        "Loading/empty/error/permission states",
+        "Keyboard/RTL and screenshots",
+        "WP admin E2E"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-CORE",
+      "phase": "P1",
+      "summary": "Free rule engine, publish gate and adapters",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-COMPOSER"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-SAVE",
+      "phase": "P1",
+      "summary": "Draft preservation and classic Woo editor publish validation",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-COMPOSER"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-REST",
+      "phase": "P1",
+      "summary": "Server-side REST status validation",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-COMPOSER"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-CRON",
+      "phase": "P1",
+      "summary": "Scheduled publishing and batch state",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-COMPOSER"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P1-PACK",
+      "phase": "P1",
+      "summary": "Free release ZIP clean-install interim tests",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P0-COMPOSER"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-ENGINE",
+      "phase": "P2",
+      "summary": "Conditional policy schema, simulation and precedence",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P1-CORE"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-VARIATIONS",
+      "phase": "P2",
+      "summary": "Advanced variation matrix and finite resource caps",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P1-CORE"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-BULK",
+      "phase": "P2",
+      "summary": "Batch preflight, queue controls, idempotent release",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P1-CORE"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-IMPORT",
+      "phase": "P2",
+      "summary": "CSV staging, parent-child completion and safe release",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P1-CORE"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-APPROVAL",
+      "phase": "P2",
+      "summary": "Multi-role approval state machine, comments and audit",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P1-CORE"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-REVISIONS",
+      "phase": "P2",
+      "summary": "Versioned live-product revisions and conflict-safe apply",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P1-CORE"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-API",
+      "phase": "P2",
+      "summary": "Pro integrations REST and CLI adapter coverage",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P1-CORE"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-WAIVERS",
+      "phase": "P2",
+      "summary": "Time-limited auditable soft policy waivers",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P1-CORE"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P2-PROPACK",
+      "phase": "P2",
+      "summary": "Pro ZIP and Free dependency/version checks",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P1-CORE"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-SECURITY",
+      "phase": "P3",
+      "summary": "Threat model, fuzzing, privilege tests",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-CONCURRENCY",
+      "phase": "P3",
+      "summary": "MySQL/MariaDB approvals, revisions, batch races",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-PLAYGROUND",
+      "phase": "P3",
+      "summary": "Run actual Free and Pro bundled Playground environment E2E",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-ACCESSIBILITY",
+      "phase": "P3",
+      "summary": "Real WordPress admin wide/narrow/RTL/keyboard audit",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-PERFORMANCE",
+      "phase": "P3",
+      "summary": "10k/50k catalog profiling and queue correctness",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-REGRESSION",
+      "phase": "P3",
+      "summary": "Full source adapter, rules and screen regression",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P4-READMES",
+      "phase": "P4",
+      "summary": "Generate verified docs/readmes from manifest",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P3-REGRESSION"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P4-FREE-SUBMISSION",
+      "phase": "P4",
+      "summary": "WordPress.org Free reviewer package and Plugin Check",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P3-REGRESSION"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P4-PRO-SUBMISSION",
+      "phase": "P4",
+      "summary": "Woo Marketplace Pro/QIT reviewer evidence",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P3-REGRESSION"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P4-BUILDS",
+      "phase": "P4",
+      "summary": "Clean install from final reproducible Free/Pro ZIPs, checksums",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P3-REGRESSION"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P4-FINAL",
+      "phase": "P4",
+      "summary": "Publish evidence-backed release candidate and handoff",
+      "owner": "Lead AI Development Agent",
+      "priority": "critical",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P3-REGRESSION"
+      ],
+      "acceptance_criteria": [],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T01",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Simple missing title",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T02",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Missing price vs numeric `0`",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T03",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Sale price > regular",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T04",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Out-of-stock",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T05",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Backorders with negative quantity",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T06",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Virtual without dimensions",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T07",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Downloadable file missing",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T08",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario External product invalid URL",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T09",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Grouped product with no children",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T10",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Variable parent with no enabled purchasable variation",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T11",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Variation intentional missing combination",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T12",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Variation wildcard ANY",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T13",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Duplicate attribute permutation",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T14",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Orphan variation",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T15",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Variation inherits allowed parent image",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T16",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Variation explicitly requires own image",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T17",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Huge attribute matrix",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T18",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Attribute value deleted after approval",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T19",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Product category changes",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T20",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario REST tries publish invalid product",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T21",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario REST edits published protected price",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T22",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Woo CSV includes parent before children",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T23",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Woo CSV includes children before parent",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T24",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Duplicate CSV import",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T25",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario CSV malformed/UTF-8 invalid",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T26",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Background job fails mid-chunk",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T27",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Two bulk release jobs same product",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T28",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Scheduled product becomes invalid",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T29",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Daylight saving/timezone shift",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T30",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Requester tries self-approve under segregation",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T31",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Approval stage 2 before stage 1",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T32",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Product edited after approval",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T33",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Policies edited after approval",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T34",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario One manager revokes waiver",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T35",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Waiver expired before scheduled release",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T36",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Unsupported direct SQL importer",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T37",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Pro turned off",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T38",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Free turned off while Pro active",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T39",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Activating plugin on 50k existing live products",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T40",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Draft save without image",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T41",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Failed save after HTTP timeout",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T42",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Missing Composer vendor directory",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T43",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Malicious user accesses approve API",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T44",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario CSV formula payload in SKU/name",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T45",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Malicious media or external URL",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T46",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Concurrent revision apply after live edit",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T47",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario REST/API UI nonces, XSS payload",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T48",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Multiple policies conflict",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T49",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario RTL / keyboard only",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T50",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario WordPress.org Free ZIP",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T51",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Woo Marketplace Pro ZIP",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T52",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Documentation features outpace code",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T53",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Old pending validation after product update",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T54",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Uninstall with preserve preference",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T55",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Uninstall with delete preference",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    },
+    {
+      "id": "WPCPG-P3-TEST-T56",
+      "phase": "P3",
+      "summary": "Implement and execute acceptance scenario Stale/corrupted persistent AI state",
+      "owner": "QA Agent",
+      "priority": "high",
+      "status": "idea",
+      "dependencies": [
+        "WPCPG-P2-PROPACK"
+      ],
+      "acceptance_criteria": [
+        "Test runnable",
+        "Passing actual log",
+        "Linked implementation and regression"
+      ],
+      "verified_evidence": [],
+      "test_commands": [],
+      "implemented_files": [],
+      "blocker": null,
+      "last_updated_utc": null
+    }
+  ]
+}

@@ -1,0 +1,616 @@
+{
+  "schema_version": 1,
+  "implemented": false,
+  "screens": [
+    {
+      "id": "UI-001",
+      "name": "Overview",
+      "owner": "Free with Pro enhancements",
+      "route": "WooCommerce > Catalog Publish Guard > Overview",
+      "purpose": "Actionable KPIs with actual linked queues and selected coverage scope.",
+      "fields": [
+        "Date range: last 7/30/90 days/custom; default 30",
+        "Scope: all/new/changed/published/drafts",
+        "Category and product type filter",
+        "Readiness chart data count; no fabricated 0->100 stats",
+        "Recent blocked events, top rule failures, stale validation count",
+        "Pro: approval queues, batch jobs and policy health"
+      ],
+      "columns": [
+        "Latest activity time",
+        "Product linked edit",
+        "Source",
+        "Readiness",
+        "Top issue",
+        "Owner",
+        "Open detail"
+      ],
+      "actions": [
+        "Run catalog audit: launch bounded background scan",
+        "Open blocked products: apply blocked filter",
+        "Review recent failures: open run",
+        "Dismiss notice only if dismissible",
+        "Refresh: refetch all widgets with settled timestamp"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "KPI aggregation + navigation E2E + role access + timezones"
+    },
+    {
+      "id": "UI-002",
+      "name": "Product Preflight",
+      "owner": "Free",
+      "route": "WooCommerce > Catalog Publish Guard > Product Preflight",
+      "purpose": "Single-product diagnostic, never mutating merely by scanning.",
+      "fields": [
+        "Product autocomplete by name/SKU/ID; required",
+        "Product type read-only",
+        "Publish intent: new publish / update / scheduled preview",
+        "Show selected policy and rule count",
+        "Allow non-publishing rerun on staged data",
+        "Pro: simulate policy profile and proposal diff"
+      ],
+      "columns": [
+        "Severity",
+        "Rule ID",
+        "Field path",
+        "Expected/actual safe values",
+        "Remediation",
+        "Fix link"
+      ],
+      "actions": [
+        "Validate now (GET/read operation when possible)",
+        "Open product edit",
+        "Show rule details",
+        "Print/export non-sensitive report",
+        "Pro: Submit for approval"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Single ID validation; missing product; no permissions; no mutation side effect"
+    },
+    {
+      "id": "UI-003",
+      "name": "Basic Validation Rules",
+      "owner": "Free",
+      "route": "WooCommerce > Catalog Publish Guard > Rules",
+      "purpose": "Fast usable per-rule configuration for solo merchants.",
+      "fields": [
+        "Category selector: basics/pricing/images/stock/variations/types",
+        "Rule enable switch default per registry",
+        "Severity: info/warn/block (bounded per rule)",
+        "Rule-specific threshold inputs with units and validation",
+        "Application: new publishes and optionally updates/scheduled",
+        "Global preset: Recommended/Strict/Custom; reset with preview",
+        "Rule field help/links, unsaved changes warning"
+      ],
+      "columns": [
+        "Rule ID",
+        "Rule title",
+        "Applies to",
+        "Enabled",
+        "Severity",
+        "Last changed"
+      ],
+      "actions": [
+        "Save rules; validation and capability checks",
+        "Reset to recommended (confirm)",
+        "Run simulated sample (non-mutating)",
+        "Expand rule details",
+        "Show linked affected products"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Persist/reload all controls; invalid threshold; same rule different product types"
+    },
+    {
+      "id": "UI-004",
+      "name": "Policy Builder",
+      "owner": "Pro",
+      "route": "WooCommerce > Catalog Publish Guard > Policies",
+      "purpose": "Conditional rules with AND/OR groups, priority and safe simulation.",
+      "fields": [
+        "Policy name (required, <=120 chars), description",
+        "Status draft/active/paused/archived",
+        "Scope include/exclude: categories, descendants, types, tags, brands, roles, import source",
+        "Condition group builder AND/OR nested max depth 3",
+        "Condition field/operator typed value/regex validator",
+        "Requirements select registry rule; severity/action override",
+        "Priority integer and conflict preview",
+        "Applies on first publish/update/scheduled/import/bulk",
+        "Approval path optional 1/2 stages",
+        "Effective/expiry dates; timezone",
+        "Policy version read-only, active status badge",
+        "Import/export policies with schema validation"
+      ],
+      "columns": [
+        "Policy name",
+        "Status",
+        "Scope",
+        "Priority",
+        "Rules",
+        "Version",
+        "Last changed",
+        "Actions"
+      ],
+      "actions": [
+        "Add policy, duplicate, activate, pause, archive, version history",
+        "Add/remove/reorder condition or requirement",
+        "Save draft and publish policy",
+        "Simulate on product IDs without mutation",
+        "Compare conflicts and effective rules",
+        "Export settings, import dry-run"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Policy AST fuzz tests + precedence + XSS + cache invalidation + role capability"
+    },
+    {
+      "id": "UI-005",
+      "name": "Catalog Audit",
+      "owner": "Free baseline, Pro extended",
+      "route": "WooCommerce > Catalog Publish Guard > Catalog Audit",
+      "purpose": "Safe paged scan over Woo product data, actionable list and progress.",
+      "fields": [
+        "Scope draft/pending/published/all; default published + drafts",
+        "Category/type filters; search SKU/title",
+        "Severity status filter",
+        "Last checked sort and limit",
+        "Free manual audit; Pro scheduled/advanced filters"
+      ],
+      "columns": [
+        "Product thumbnail",
+        "Name/SKU",
+        "Type",
+        "WP publish status",
+        "Readiness",
+        "Issues",
+        "Last checked",
+        "Actions"
+      ],
+      "actions": [
+        "Scan selected products: bounded safe job",
+        "Rescan a product",
+        "Open product/issues",
+        "Filter/search/sort/paginate",
+        "Pro: export full report and start bulk preflight"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Large catalog stress; stable pagination; queue lock; no accidental publish"
+    },
+    {
+      "id": "UI-006",
+      "name": "Variation Inspector",
+      "owner": "Pro",
+      "route": "WooCommerce > Catalog Publish Guard > Variation Inspector",
+      "purpose": "Scalable parent/child variation diagnosis with explicit expected set controls.",
+      "fields": [
+        "Variable parent product autocomplete",
+        "Attribute groups and available terms",
+        "Expected combinations policy: NONE / MANUAL / COMPLETE MATRIX with deliberate opt-in",
+        "Wildcard ANY variation treatment",
+        "Include/exclude disabled variations",
+        "Parent image fallback allowed switch",
+        "Thresholds for per-variation price/SKU/stock/images",
+        "Matrix cap and summary-only fallback"
+      ],
+      "columns": [
+        "Attribute combination",
+        "Variation ID",
+        "Enabled",
+        "SKU",
+        "Price",
+        "Stock",
+        "Image",
+        "Rule results",
+        "Fix"
+      ],
+      "actions": [
+        "Inspect now",
+        "Toggle expected/ignored combination with confirmation",
+        "Preview missing/duplicate/orphan groups",
+        "Open exact variation editor",
+        "Export diagnostics CSV",
+        "Submit variant policy update for permissioned save"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Size-color combos, wildcards, intentional absent combos, huge matrix cap, 5000 variants"
+    },
+    {
+      "id": "UI-007",
+      "name": "Bulk Preflight",
+      "owner": "Pro",
+      "route": "WooCommerce > Catalog Publish Guard > Bulk Preflight",
+      "purpose": "Background dry-run/revalidate/release batches with progress and safe subset.",
+      "fields": [
+        "Saved filter or explicit product IDs",
+        "Status/category/type/last-change/owner/issue filters",
+        "Batch label and dry-run default true",
+        "Chunk size configurable within bounded range",
+        "Include new vs update vs scheduled",
+        "Release plan: eligible-only / selected / staged review",
+        "Conflict behavior: revalidate, skip changed, manual review"
+      ],
+      "columns": [
+        "Batch ID",
+        "Created by",
+        "Total",
+        "Checked",
+        "Blocked",
+        "Ready",
+        "Pending",
+        "Progress %",
+        "Status",
+        "Actions"
+      ],
+      "actions": [
+        "Create dry-run",
+        "Start/pause/resume/cancel job",
+        "Inspect row issues",
+        "Export results",
+        "Select ready rows",
+        "Preview impact",
+        "Release eligible products with capability and fresh revalidation",
+        "Retry failed rows idempotently"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "10k catalog, concurrent jobs, job cancellation, stale rows, authorization, per-row outcome"
+    },
+    {
+      "id": "UI-008",
+      "name": "CSV Import Guard",
+      "owner": "Pro",
+      "route": "WooCommerce > Catalog Publish Guard > Import Guard",
+      "purpose": "Optional protected CSV import staging and deliberate release.",
+      "fields": [
+        "CSV chooser, limits/encoding/delimiter",
+        "Column mapping: ID/SKU/name/type/status/parent/attributes/price/images and Woo supported fields",
+        "Update existing? yes/no; key identifier strategy",
+        "Target default: stage, preserve requested publish status",
+        "Preview count, created/updated/error/conflict",
+        "Variation assembly readiness and parent dependency",
+        "Import timeout/row error details with line numbers"
+      ],
+      "columns": [
+        "Row",
+        "Source identifier",
+        "Target product",
+        "Action create/update",
+        "Requested status",
+        "Stage status",
+        "Issues",
+        "Fix/retry"
+      ],
+      "actions": [
+        "Upload/validate file",
+        "Save mapping profile",
+        "Preview dry-run (never mutate)",
+        "Stage/import approved",
+        "Pause/resume/cancel",
+        "Review parent-child unresolved",
+        "Retry selected rows",
+        "Send eligible to bulk preflight",
+        "Remove uploaded statement according to retention"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Malformed CSV, UTF-8, duplicate SKUs, partial upload, parent-child order, idempotence"
+    },
+    {
+      "id": "UI-009",
+      "name": "Approval Queue",
+      "owner": "Pro",
+      "route": "WooCommerce > Catalog Publish Guard > Approvals",
+      "purpose": "Role-based product review, signed snapshot decisions and assignment.",
+      "fields": [
+        "Tabs: Ready/Pending/In Review/Changes Requested/Approved/Expired",
+        "Filters status/assignee/submitter/category/stage/date",
+        "Approver selection, step 1/2 roles",
+        "Decision comment required on rejection/waiver; default editable",
+        "Approval mode: 1-stage/2-stage, self-approval forbidden default",
+        "Product diff and validation summary",
+        "Snapshot hash, policy version, last mutation"
+      ],
+      "columns": [
+        "Request ID",
+        "Product",
+        "Requester",
+        "Assignee",
+        "Validation result",
+        "Current stage",
+        "Age",
+        "Updated",
+        "Actions"
+      ],
+      "actions": [
+        "Submit",
+        "Claim/assign",
+        "Approve (with fresh state check)",
+        "Reject with reason",
+        "Request changes",
+        "Reassign",
+        "Cancel own request",
+        "View diff",
+        "Audit trail",
+        "Batch approve only homogeneous ready items with preview"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Approver capability, self-approval, concurrent approvals, changed snapshot, 2-stage order"
+    },
+    {
+      "id": "UI-010",
+      "name": "Published Product Revisions",
+      "owner": "Pro",
+      "route": "WooCommerce > Catalog Publish Guard > Pending Revisions",
+      "purpose": "Protect live listings while proposed changes await validation/approval.",
+      "fields": [
+        "Product search, revision status and assignee",
+        "Fields changed select/filter",
+        "Compare live vs proposal, variation changes and images",
+        "Base version fingerprint, conflict indicator",
+        "Draft preview and per-field support notes"
+      ],
+      "columns": [
+        "Revision ID",
+        "Product",
+        "Original version",
+        "Changed fields",
+        "Author",
+        "Approval",
+        "Conflict",
+        "Submitted"
+      ],
+      "actions": [
+        "Save proposal",
+        "Run validation",
+        "Submit for approval",
+        "Compare details",
+        "Approve or request changes",
+        "Resolve conflict/rebase",
+        "Apply revision (fresh version check)",
+        "Reject/archive",
+        "Rollback assisted if supported"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Existing live remains unchanged, stale apply blocked, supported variation changes, rollback"
+    },
+    {
+      "id": "UI-011",
+      "name": "Exceptions & Waivers",
+      "owner": "Pro",
+      "route": "WooCommerce > Catalog Publish Guard > Waivers",
+      "purpose": "Time-limited documented exception to selected non-critical business policies.",
+      "fields": [
+        "Product IDs and rule/policy ID",
+        "Waiver reason required min 20 chars",
+        "Expiry date/time with bounded maximum",
+        "Reviewer/role and second approval optional",
+        "Scope one product/rule/limited batch",
+        "Evidence note optional, no public private file by default",
+        "Show non-waivable integrity/security errors"
+      ],
+      "columns": [
+        "Waiver ID",
+        "Product",
+        "Rule",
+        "Reason summary",
+        "Requester",
+        "Approver",
+        "Expiry",
+        "State"
+      ],
+      "actions": [
+        "Request waiver",
+        "Approve/reject permissioned",
+        "Revoke",
+        "Expire job",
+        "Open audit history",
+        "Simulate new publish decision"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Expired waivers, unsupported rules, unauthorized request, edit after waiver"
+    },
+    {
+      "id": "UI-012",
+      "name": "Reports",
+      "owner": "Free simple, Pro extended",
+      "route": "WooCommerce > Catalog Publish Guard > Reports",
+      "purpose": "Understand bottlenecks and track real policy outcomes.",
+      "fields": [
+        "Preset 7/30/90 days or custom",
+        "Category/type/source/policy/rule/status/role filters",
+        "Report: issue frequency, blocked attempts, readiness trends, approvals, batch success",
+        "Grouping by day/week/month, timezone",
+        "Export format CSV/JSON Pro; limited summary Free",
+        "Anonymize mode and redaction toggle"
+      ],
+      "columns": [
+        "Period",
+        "Products checked",
+        "Blocked attempts",
+        "Most frequent rule",
+        "Resolved issues",
+        "Approvals",
+        "Average latency"
+      ],
+      "actions": [
+        "Generate report",
+        "Filter",
+        "Export sanitized CSV/JSON",
+        "Save view (Pro)",
+        "Open underlying event list",
+        "Clear filters"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "No fabricated metrics, permissions on private audit data, export injection, localization"
+    },
+    {
+      "id": "UI-013",
+      "name": "Activity Log",
+      "owner": "Free basic, Pro extended",
+      "route": "WooCommerce > Catalog Publish Guard > Activity",
+      "purpose": "Trace decisions without leaking private business/customer data.",
+      "fields": [
+        "Type: rule changed, validated, blocked, submitted, approved, rejected, released, waiver, import, revision",
+        "Product ID/SKU or actor filter",
+        "Date range and correlation ID",
+        "Pro diff/details, export, retention and purge controls"
+      ],
+      "columns": [
+        "Timestamp UTC/display local",
+        "Actor",
+        "Action",
+        "Entity ID",
+        "Channel",
+        "Decision",
+        "Correlation ID",
+        "Details"
+      ],
+      "actions": [
+        "Filter/search/sort",
+        "View event detail",
+        "Export (Pro capability)",
+        "Retention preview and confirm purge"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Immutable events, no secrets, pagination, actor redaction, no silent loss"
+    },
+    {
+      "id": "UI-014",
+      "name": "Settings",
+      "owner": "Free base, Pro expanded",
+      "route": "WooCommerce > Catalog Publish Guard > Settings",
+      "purpose": "Explicit global enforcement, adoption safety, roles, notifications and integration settings.",
+      "fields": [
+        "General: enable guard, mode audit/warn/enforce, first-install onboarding recommended; DO NOT silently unpublish existing",
+        "Apply to: first publish, updates, scheduled, quick/bulk, API, importer; display coverage limitations",
+        "Product exclusions: types/categories/IDs with explainable guards",
+        "Readiness defaults / preflight cache lifetime / staleness",
+        "Media checks sync/asynchronous caps and timeout",
+        "Inventory/zero-price defaults and intentional variant gaps",
+        "Notifications: email enabled, recipients by capabilities, event triggers; throttle",
+        "Pro policies: default precedence, waiver expiry max, role/capability mapping",
+        "Pro approvals: one/two stages, segregation of duties, approval expiration, revision mode",
+        "Pro jobs: chunk sizes, concurrency, memory/time limits, queue retries",
+        "Pro import: MIME/size/row cap, file retention, error behavior, staging default",
+        "Reporting: log retention, export privacy",
+        "Privacy: uninstall delete-or-preserve and opt-in telemetry (off by default)",
+        "License: status, key masked, Woo Marketplace integration only if compliant"
+      ],
+      "columns": [
+        "Setting",
+        "Value",
+        "Owner Free/Pro",
+        "Last changed",
+        "Validation"
+      ],
+      "actions": [
+        "Save each tab",
+        "Discard unsaved changes",
+        "Restore documented defaults (confirm)",
+        "Export/import settings Pro with dry-run",
+        "Test notification (permissioned)",
+        "Run rule simulation",
+        "View integration coverage matrix"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Cross-tab state persistence, invalid settings, role map escalation, settings upgrade migration"
+    },
+    {
+      "id": "UI-015",
+      "name": "Tools & Diagnostics",
+      "owner": "Free base, Pro enhanced",
+      "route": "WooCommerce > Catalog Publish Guard > Tools",
+      "purpose": "Operational visibility and safe repair, no magic success messages.",
+      "fields": [
+        "WordPress/PHP/Woo versions, active product editor",
+        "Composer autoload/class registry, DB schema/migration version",
+        "REST/status/quick edit/import adapter coverage tests",
+        "Cron/Action Scheduler queue status and stalled jobs",
+        "PHP error logs safe excerpts/redaction",
+        "Feature licensing status Pro",
+        "Debug log toggle with TTL",
+        "Data retention estimates and privacy preview"
+      ],
+      "columns": [
+        "Check name",
+        "Compatibility",
+        "Last checked",
+        "Status",
+        "Guidance",
+        "Action"
+      ],
+      "actions": [
+        "Run health check",
+        "Self-test safe no product mutation",
+        "Copy sanitized diagnostics",
+        "Retry failed job",
+        "Run migration preview; execute only authorized",
+        "Export structured support package"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Missing Woo, PHP constraints, vendor absent, failed migration, jobs stuck, no secret leakage"
+    },
+    {
+      "id": "UI-016",
+      "name": "Product Editor Readiness Box",
+      "owner": "Free, Pro extensions",
+      "route": "Products > Edit Product > Publish panel / meta box",
+      "purpose": "In-context actionable immediate feedback and preserved drafts.",
+      "fields": [
+        "Auto check status, last checked timestamp and stale indicator",
+        "Counts blocker/warning/info",
+        "Issue accordion grouped by variation/field",
+        "Deep links to exact Woo product tab/variation",
+        "Pro policy origin and review request entrypoint",
+        "Reason for block, draft preserved confirmation"
+      ],
+      "columns": [
+        "Severity",
+        "Rule",
+        "Field",
+        "Observed",
+        "Fix link"
+      ],
+      "actions": [
+        "Validate now",
+        "Fix issue (navigate field)",
+        "Save draft",
+        "Request review (Pro)",
+        "Submit again after correction",
+        "Show policy details",
+        "Dismiss informational notices only"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "Classic editor E2E, autosave, variation AJAX saves, REST publish bypass and no JS fallback"
+    },
+    {
+      "id": "UI-017",
+      "name": "Products List Integration",
+      "owner": "Free",
+      "route": "Products > All Products",
+      "purpose": "At-a-glance readiness and filtered action results.",
+      "fields": [
+        "Optional readiness column on/off",
+        "Filter Ready/Warnings/Blocked/Stale/Not checked",
+        "Show number of blockers",
+        "Last checked tooltip",
+        "Action: Validate selected under capability"
+      ],
+      "columns": [
+        "Thumbnail",
+        "Product",
+        "SKU",
+        "Stock",
+        "Price",
+        "Readiness",
+        "Last checked",
+        "Publish status"
+      ],
+      "actions": [
+        "Filter by readiness",
+        "Sort by freshness if supported",
+        "Open preflight",
+        "Bulk scan selected",
+        "Refresh selected row status"
+      ],
+      "states": "loading | not configured | empty | filtered empty | ready | validation failure | permission denied | network failure | partial success | retry",
+      "tests": "WP Products list responsive, paginate, translated labels, no N+1 per row"
+    }
+  ]
+}

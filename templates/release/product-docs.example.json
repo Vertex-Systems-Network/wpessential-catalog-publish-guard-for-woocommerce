@@ -1,0 +1,600 @@
+{
+  "schema_version": 1,
+  "release_approved": false,
+  "verified_commit": null,
+  "evidence_archive": null,
+  "release_version": null,
+  "requires_wp": null,
+  "tested_wp": null,
+  "requires_php": null,
+  "requires_woocommerce": null,
+  "tested_woocommerce": null,
+  "license": "GPLv2 or later",
+  "license_uri": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "wporg_contributors": [],
+  "tags": [
+    "woocommerce",
+    "products",
+    "catalog",
+    "validation",
+    "publish"
+  ],
+  "free": {
+    "slug": "wpessential-catalog-publish-guard",
+    "name": "WPEssential Catalog Publish Guard for WooCommerce",
+    "short_description": "Catch incomplete WooCommerce products before publishing with actionable validation checks.",
+    "description": "A WooCommerce-native pre-publish quality guard. Planned functionality, not implemented yet.",
+    "installation": [
+      "Install and activate WooCommerce",
+      "Install and activate this plugin"
+    ],
+    "faq": []
+  },
+  "pro": {
+    "slug": "wpessential-catalog-publish-guard-pro",
+    "name": "WPEssential Catalog Publish Guard Pro for WooCommerce",
+    "short_description": "Conditional catalog publishing policies, variation checks, staged imports and approval workflows.",
+    "description": "Planned premium publishing review and automation. Not implemented or verified yet.",
+    "installation": [
+      "Install and activate WooCommerce and WPEssential Catalog Publish Guard Free",
+      "Install and activate this Pro extension"
+    ],
+    "faq": []
+  },
+  "features": [
+    {
+      "id": "BAS-001",
+      "tier": "free",
+      "name": "Missing/blank product title",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "BAS-002",
+      "tier": "free",
+      "name": "Description absent",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "BAS-003",
+      "tier": "free",
+      "name": "Short description absent",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "BAS-004",
+      "tier": "free",
+      "name": "No product categories",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "BAS-005",
+      "tier": "free",
+      "name": "Only Uncategorized selected",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "BAS-006",
+      "tier": "free",
+      "name": "Missing SKU",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "BAS-007",
+      "tier": "free",
+      "name": "Duplicate SKU where verified",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "BAS-008",
+      "tier": "free",
+      "name": "Featured image missing",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "BAS-009",
+      "tier": "free",
+      "name": "Featured image attachment invalid",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "BAS-010",
+      "tier": "free",
+      "name": "Product type cannot be resolved",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-001",
+      "tier": "free",
+      "name": "Missing effective price",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-002",
+      "tier": "free",
+      "name": "Explicit zero price",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-003",
+      "tier": "free",
+      "name": "Negative effective price",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-004",
+      "tier": "free",
+      "name": "Invalid numeric format",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-005",
+      "tier": "free",
+      "name": "Sale above regular price",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-006",
+      "tier": "free",
+      "name": "End date before start",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-007",
+      "tier": "free",
+      "name": "Expired sale schedule",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-008",
+      "tier": "free",
+      "name": "Price changes after validation",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "STK-001",
+      "tier": "free",
+      "name": "Manage stock quantity missing",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "STK-002",
+      "tier": "free",
+      "name": "Stock inconsistency",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "STK-003",
+      "tier": "free",
+      "name": "Negative quantity respecting backorders",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "STK-004",
+      "tier": "free",
+      "name": "Out of stock",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "STK-005",
+      "tier": "free",
+      "name": "Backorder policy violation",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "STK-006",
+      "tier": "free",
+      "name": "Invalid stock number",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-001",
+      "tier": "free",
+      "name": "Variable parent contains no variations",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-002",
+      "tier": "free",
+      "name": "No enabled purchasable variations",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-003",
+      "tier": "free",
+      "name": "Enabled variation without effective price",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-004",
+      "tier": "free",
+      "name": "Missing valid parent attribute definition",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-005",
+      "tier": "free",
+      "name": "Invalid default variation",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "TYP-001",
+      "tier": "free",
+      "name": "Downloadable file row empty when required",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "TYP-002",
+      "tier": "free",
+      "name": "Invalid downloadable file reference",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "TYP-003",
+      "tier": "free",
+      "name": "External URL invalid",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "TYP-004",
+      "tier": "free",
+      "name": "Grouped child relation missing",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "TYP-005",
+      "tier": "free",
+      "name": "Virtual product shipping fields not applicable",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "TYP-006",
+      "tier": "free",
+      "name": "Unknown custom product type",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IMG-101",
+      "tier": "pro",
+      "name": "Minimum gallery image count",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IMG-102",
+      "tier": "pro",
+      "name": "Minimum image dimensions",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IMG-103",
+      "tier": "pro",
+      "name": "Missing image ALT text",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IMG-104",
+      "tier": "pro",
+      "name": "Duplicate featured/gallery attachment",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IMG-105",
+      "tier": "pro",
+      "name": "Broken local attachment file",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IMG-106",
+      "tier": "pro",
+      "name": "Variation image missing / parent fallback",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IMG-107",
+      "tier": "pro",
+      "name": "Image-type/category conditional requirements",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-101",
+      "tier": "pro",
+      "name": "Minimum permitted price",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-102",
+      "tier": "pro",
+      "name": "Maximum permitted price",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-103",
+      "tier": "pro",
+      "name": "Discount percentage above limit",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-104",
+      "tier": "pro",
+      "name": "Sudden price decrease threshold",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-105",
+      "tier": "pro",
+      "name": "Category price band",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "PRC-106",
+      "tier": "pro",
+      "name": "Currency-specific threshold",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-101",
+      "tier": "pro",
+      "name": "Missing explicitly expected combinations",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-102",
+      "tier": "pro",
+      "name": "Duplicate attribute combinations",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-103",
+      "tier": "pro",
+      "name": "Orphan variation / detached parent",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-104",
+      "tier": "pro",
+      "name": "Variation uses nonexistent attribute term",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-105",
+      "tier": "pro",
+      "name": "Unused parent attribute values",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-106",
+      "tier": "pro",
+      "name": "Variation SKU missing / pattern",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-107",
+      "tier": "pro",
+      "name": "Variation stock quantity inconsistent",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-108",
+      "tier": "pro",
+      "name": "Variation dimension requirements",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-109",
+      "tier": "pro",
+      "name": "Variation image required despite fallback",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-110",
+      "tier": "pro",
+      "name": "Wildcard ANY variation ambiguity",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-111",
+      "tier": "pro",
+      "name": "Variation inherited pricing and availability",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "VAR-112",
+      "tier": "pro",
+      "name": "Disabled variation policy",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "SHP-101",
+      "tier": "pro",
+      "name": "Shipping weight required",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "SHP-102",
+      "tier": "pro",
+      "name": "Dimensions required",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "SHP-103",
+      "tier": "pro",
+      "name": "Shipping class requirement",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IDF-101",
+      "tier": "pro",
+      "name": "SKU format regex",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IDF-102",
+      "tier": "pro",
+      "name": "Brand taxonomy required",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IDF-103",
+      "tier": "pro",
+      "name": "GTIN/MPN meta requirement",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IDF-104",
+      "tier": "pro",
+      "name": "Custom field required",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IDF-105",
+      "tier": "pro",
+      "name": "Taxonomy term minimum",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "IDF-106",
+      "tier": "pro",
+      "name": "Tag count requirement",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "POL-101",
+      "tier": "pro",
+      "name": "Policy conflict / unsupported value",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "POL-102",
+      "tier": "pro",
+      "name": "Pending approval stale after product change",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "POL-103",
+      "tier": "pro",
+      "name": "Pending approval stale after policy change",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "POL-104",
+      "tier": "pro",
+      "name": "Revision base product changed",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "POL-105",
+      "tier": "pro",
+      "name": "Scheduled release validation fails",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "POL-106",
+      "tier": "pro",
+      "name": "Import parent/variation assembly incomplete",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "POL-107",
+      "tier": "pro",
+      "name": "Unauthorized waiver",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "POL-108",
+      "tier": "pro",
+      "name": "Expired waiver",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "POL-109",
+      "tier": "pro",
+      "name": "Multi-policy category precedence",
+      "status": "planned",
+      "verified_test_id": null
+    },
+    {
+      "id": "POL-110",
+      "tier": "pro",
+      "name": "Synchronized published edit conflicts",
+      "status": "planned",
+      "verified_test_id": null
+    }
+  ],
+  "changelog": []
+}

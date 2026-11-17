@@ -1,0 +1,3 @@
+# Enforcement status
+
+The current RuleEngine evaluates BAS-001 and PRC-001 against in-memory WooCommerce product objects. It is not wired to publication or the admin UI. No publish path is protected yet. The rule labels in `docs/rules.json` are requirements, not implementation evidence. PRC-001 only applies to simple products and variations pending type-specific integration tests. Product editor, REST, importer and scheduled publish hook selection requires lifecycle tests; `wp_insert_post_data` alone cannot validate later-saved product metadata. See official [WordPress filter reference](https://developer.wordpress.org/reference/hooks/wp_insert_post_data/) and [WooCommerce hook index](https://woocommerce.github.io/code-reference/hooks/hooks.html).

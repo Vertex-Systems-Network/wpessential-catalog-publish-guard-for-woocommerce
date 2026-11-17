@@ -1,0 +1,8 @@
+{
+  "name": "wpessential/catalog-publish-guard",
+  "description": "WooCommerce catalog publication readiness checks",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {"php": ">=7.4"},
+  "autoload": {"psr-4": {"WPEssential\\CatalogPublishGuard\\": "src/"}}
+}

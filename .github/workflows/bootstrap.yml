@@ -1,0 +1,30 @@
+name: Bootstrap checks
+on:
+  push:
+    branches: [codex/bootstrap-catalog-publish-guard]
+  pull_request:
+jobs:
+  php:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ['7.4', '8.2', '8.3']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          tools: composer:v2
+      - name: Validate independent Composer manifests
+        run: |
+          composer validate --strict --no-check-publish wpessential-catalog-publish-guard/composer.json
+          composer validate --strict --no-check-publish wpessential-catalog-publish-guard-pro/composer.json
+      - name: Lint PHP
+        run: find wpessential-catalog-publish-guard wpessential-catalog-publish-guard-pro -name '*.php' -print0 | xargs -0 -n1 php -l
+      - name: Rule contracts
+        run: php wpessential-catalog-publish-guard/tests/Unit/rule-engine.php
+  blueprint-templates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/validate_blueprints.py

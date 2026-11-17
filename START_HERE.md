@@ -7,3 +7,5 @@ Current phase: P0. Current task: `WPCPG-P0-COMPOSER`. First action: inspect both
 2026-11-17 checkpoint: PHP test matrix configured in `.github/workflows/bootstrap.yml`; await actual CI logs before marking P0-COMPOSER done. Next independent task: P0-CONTRACTS; codify product snapshot and source adapter contract, then write tests. No publication interception exists.
 
 P0-CONTRACTS in progress: snapshot factory added and isolated unit contract case queued. GitHub Actions run 44021045203 is in progress for previous commit; inspect logs and fix before completion. Next action: inspect CI, then verify snapshot test, continue source adapters.
+
+GitHub Actions runs 44021045203 and 44021176636 passed. Continue P0-CONTRACTS with source adapter contracts and actual Woo integration test harness. P0-COMPOSER remains testing because lockfiles/vendor/activation have no evidence.

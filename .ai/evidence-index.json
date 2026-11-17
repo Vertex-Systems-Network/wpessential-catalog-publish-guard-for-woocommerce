@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {
+      "commit": "96f425b0d62bdff9df5a384704d01df2fd308148",
+      "url": "https://github.com/wpessential/wpessential-catalog-publish-guard-for-woocommerce/actions/runs/44021045203",
+      "result": "success",
+      "scope": "PHP lint, Composer manifest validation, standalone rule contracts, Blueprint structural checks"
+    },
+    {
+      "commit": "7f549428498cda3bc15d1db47c21d9c4c2f40250",
+      "url": "https://github.com/wpessential/wpessential-catalog-publish-guard-for-woocommerce/actions/runs/44021176636",
+      "result": "success",
+      "scope": "same matrix plus snapshot contract"
+    }
+  ],
+  "not_tested": [
+    "WordPress/WooCommerce activation",
+    "publication guard",
+    "real Playground",
+    "MySQL/MariaDB",
+    "Free and Pro packages"
+  ]
+}

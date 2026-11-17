@@ -5,16 +5,16 @@
   "current_phase": "P0",
   "active_task_id": "WPCPG-P0-CONTRACTS",
   "next_executable_task_id": "WPCPG-P0-CONTRACTS",
-  "execution_mode": "awaiting_ci",
+  "execution_mode": "ready_to_run",
   "runner_active": false,
-  "last_verified_commit": null,
+  "last_verified_commit": "7f549428498cda3bc15d1db47c21d9c4c2f40250",
   "completed_tasks": [
     "WPCPG-P0-REPO-AUDIT"
   ],
   "blocked_tasks": [],
-  "last_tested_environment": "Blueprint structural check and JSON syntax local; PHP CI pending",
+  "last_tested_environment": "GitHub Actions PHP 7.4/8.2/8.3 lint, Composer manifest validation, standalone rule/snapshot tests and Blueprint structural checks passed; no WP/Woo runtime",
   "release_gate_status": "NOT_TESTED",
   "last_handoff_path": null,
-  "last_updated_utc": "2026-11-17T05:01:24.923774+00:00",
+  "last_updated_utc": "2026-11-17T05:02:13.626143+00:00",
   "important_warning": "Rule and snapshot PHP tests are awaiting CI. No WooCommerce lifecycle test has run."
 }

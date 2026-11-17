@@ -77,15 +77,22 @@
       "summary": "Initialize separate Composer/PSR-4 bootstraps and dependency guards",
       "owner": "Lead AI Development Agent",
       "priority": "critical",
-      "status": "in_progress",
+      "status": "testing",
       "dependencies": [
         "WPCPG-P0-REPO-AUDIT"
       ],
       "acceptance_criteria": [],
       "verified_evidence": [],
-      "test_commands": [],
-      "implemented_files": [],
-      "blocker": null,
+      "test_commands": [
+        "composer validate --strict --no-check-publish (CI pending)",
+        "php -l (CI pending)"
+      ],
+      "implemented_files": [
+        "wpessential-catalog-publish-guard/composer.json",
+        "wpessential-catalog-publish-guard-pro/composer.json",
+        ".github/workflows/bootstrap.yml"
+      ],
+      "blocker": "PHP and Composer unavailable locally; CI evidence pending",
       "last_updated_utc": null
     },
     {

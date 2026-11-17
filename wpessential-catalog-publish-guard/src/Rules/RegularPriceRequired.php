@@ -12,7 +12,7 @@ final class RegularPriceRequired implements Rule {
         if (!in_array($product->get_type(), ['simple', 'variation'], true)) {
             return null;
         }
-        if ($product->get_price('edit') !== '') {
+        if ($product->get_price('edit') !== '' && $product->get_price('edit') !== null) {
             return null; // The string "0" is an explicitly set price.
         }
         return [

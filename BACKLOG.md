@@ -7,3 +7,5 @@
 - P4: builds, release checks, submission packages pending.
 
 Machine-readable task details: `.ai/tasks.json`.
+
+P0 Composer task is testing pending GitHub Actions; standalone BAS-001/PRC-001 contract cases added, not yet executed in PHP.

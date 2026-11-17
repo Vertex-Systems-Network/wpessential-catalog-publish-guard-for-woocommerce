@@ -60,14 +60,19 @@
       "summary": "Define source adapters, domain schema, Free/Pro boundaries",
       "owner": "Lead AI Development Agent",
       "priority": "critical",
-      "status": "idea",
+      "status": "in_progress",
       "dependencies": [
         "WPCPG-P0-REPO-AUDIT"
       ],
       "acceptance_criteria": [],
       "verified_evidence": [],
       "test_commands": [],
-      "implemented_files": [],
+      "implemented_files": [
+        "wpessential-catalog-publish-guard/src/Contracts/ProductSnapshot.php",
+        "wpessential-catalog-publish-guard/src/Contracts/ProductSnapshotFactory.php",
+        "wpessential-catalog-publish-guard/src/Core/WooProductSnapshotFactory.php",
+        "docs/architecture/PRODUCT_CONTRACT.md"
+      ],
       "blocker": null,
       "last_updated_utc": null
     },

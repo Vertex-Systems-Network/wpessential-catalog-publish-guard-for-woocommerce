@@ -2,6 +2,7 @@
 /** Standalone contract checks; no WordPress database or integration claims. */
 class WC_Product {
     private $name;
+    private $id = 42;
     private $price;
     private $type;
     public function __construct($name, $price, $type = 'simple') {
@@ -9,6 +10,8 @@ class WC_Product {
         $this->price = $price;
         $this->type = $type;
     }
+    public function get_id() { return $this->id; }
+    public function set_name($value) { $this->name = $value; }
     public function get_name($context = 'view') { return $this->name; }
     public function get_price($context = 'view') { return $this->price; }
     public function get_type() { return $this->type; }
@@ -17,6 +20,9 @@ function wp_strip_all_tags($value) { return strip_tags($value); }
 function __($value, $domain) { return $value; }
 
 require __DIR__ . '/../../src/Contracts/Rule.php';
+require __DIR__ . '/../../src/Contracts/ProductSnapshot.php';
+require __DIR__ . '/../../src/Contracts/ProductSnapshotFactory.php';
+require __DIR__ . '/../../src/Core/WooProductSnapshotFactory.php';
 require __DIR__ . '/../../src/Rules/TitleRequired.php';
 require __DIR__ . '/../../src/Rules/RegularPriceRequired.php';
 require __DIR__ . '/../../src/Core/RuleEngine.php';
@@ -42,3 +48,13 @@ foreach ($cases as [$label, $product, $expected]) {
     }
 }
 echo 'Rule engine contracts: 6 passed' . PHP_EOL;
+
+$original = new WC_Product('Original', '0');
+$factory = new \WPEssential\CatalogPublishGuard\Core\WooProductSnapshotFactory();
+$snapshot = $factory->fromProduct($original, 'unit');
+$original->set_name('Changed');
+if ($snapshot->product()->get_name() !== 'Original' || $snapshot->productId() !== 42 || $snapshot->source() !== 'unit') {
+    fwrite(STDERR, 'Snapshot isolation contract failed' . PHP_EOL);
+    exit(1);
+}
+echo 'Snapshot isolation contract: 1 passed' . PHP_EOL;
